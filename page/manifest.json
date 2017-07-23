@@ -1,0 +1,10 @@
+{
+  "name": "Note",
+  "version": "1.0",
+  "description": "Notas",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Note",
+    "default_popup": "http://ide50-josiasrojasramires.cs50.io/movil"
+  }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<div class="container_movil">
+		<form action={{url_for('NoteMovil')}} method="post">
+			<button type="submit"><a>Save</a></button>
+			<button><a href="{{url_for('load')}}">Load</a></button>
+			<textarea name="note"  placeholder="write here">{{text}}</textarea>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Notes: Change Password</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<nav>
+		<div>
+			<ul>
+				<li class="left"><a href="{{url_for('index')}}">Note For All</a></li>
+			</ul>
+		</div>
+		<!--Informacion-->
+		<div>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="{{url_for('contact')}}">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<form action="{{url_for('change')}}" method="post">
+			<h2>Compleate the following form</h2>
+			<input type="text" name="username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="password" name="password_confirmation" placeholder="Repeat the password">
+			<button class="button" type="submit">Submit</button>
+		</form>
+		<p class="error">{{error}}</p>
+	</div>
+</body>
+</html>

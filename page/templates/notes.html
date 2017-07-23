@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Notes: {{name}}</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<nav>
+		<div>
+			<ul>
+				<li class="left"><a href="{{url_for('index')}}">Note For All</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li><a href="{{url_for('home')}}">Writte</a></li>
+				<li><a href="{{url_for('notes')}}">Notes</a></li>
+			</ul>
+		</div>
+		<!--Informacion-->
+		<div class="info">
+			<ul>
+				<li><a href="{{url_for('about')}}">About</a></li>
+				<li><a href="{{url_for('contact')}}">Contact</a></li>
+				<li><a href="{{url_for('logout')}}">Log out</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<!--Notas Individuales-->
+		<div>
+			{% for note in notes %}
+			<div class="note">
+					<p>{{note["note"]}}</p>
+					<p>id: {{note["id"]}}</p>
+			</div>
+			{% endfor %}
+		</div>
+		<h2>If you want delete, edit or download the note</h2>
+		<p>For download instrution <a href="#">click here</a></p>
+		<form action="{{url_for('notes')}}" method="post">
+			<input type="number" name="id" placeholder="id de la nota"><br>
+			<input type="radio" name="chooseone" class="radio" value="delete"><label>Delete</label><br>
+			<input class="radio" type="radio" name="chooseone" value="edit"><label> Edit</label><br>
+			<input class="radio" type="radio" name="chooseone" value="download"><label> Download</label><br>
+			<button type="submit" class="button">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

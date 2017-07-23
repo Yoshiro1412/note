@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Notes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<nav>
+		<div class="50">
+			<ul>
+				<li class="left"><a href="{{url_for('index')}}">Note For All</a></li>
+			</ul>
+		</div>
+		<!--Informacion-->
+		<div class="50">
+			<ul>
+				<li><a href="{{url_for('about')}}">About</a></li>
+				<li><a href="{{url_for('contact')}}">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h1>Notes For all</h1>
+		<button><a href="{{url_for('extention')}}">Donwload Extention</a></button>
+		<button><a href="{{url_for('login')}}">Log in</a></button>
+		<button><a href="{{url_for('register')}}">Register</a></button>
+	</div>
+</body>
+</html>

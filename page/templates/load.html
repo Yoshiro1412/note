@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<div class="container">
+		<!--Notas Individuales-->
+		<div>
+			{% for note in notes %}
+			<div class="note">
+					<p>{{note["note"]}}</p>
+					<p>id: {{note["id"]}}</p>
+			</div>
+			{% endfor %}
+		</div>
+		<form action="{{url_for('load')}}" method="post">
+			<input type="number" name="id" placeholder="id de la nota"><br>
+			<button type="submit" class="button">Load</button>
+		</form>
+		<p>{{error}}</p>
+	</div>
+</body>
+</html>

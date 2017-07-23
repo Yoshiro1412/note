@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<div class="container_movil">
+		<h2 class="h2_movil">Log in</h2>
+		<form action="{{url_for('movil')}}" method="post">
+			<input type="text" name="username" placeholder="Username"/>
+			<input type="password" name="password" placeholder="Password"/>
+			<button type="submit"><a>Submit</a></button>
+		</form>
+		<p>{{error}}</p>
+	</div>
+</body>
+</html>

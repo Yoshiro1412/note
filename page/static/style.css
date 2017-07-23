@@ -1,0 +1,205 @@
+@import url('https://necolas.github.io/normalize.css/7.0.0/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body{
+    background-color: #33FF57;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bellefair', serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+nav div{
+	float: left;
+}
+
+div{
+    width: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF5733;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #FFBD33;
+}
+
+button{
+    background-color: #5733FF;
+    margin: 0;
+    padding: 5px;
+    height: 50px;
+    min-width: 70px;
+    border: 0;
+    border-radius: 5px;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+input{
+    height: 50px;
+    border: 1px solid;
+    padding: 2px;
+    border-color: #aaaaaa;
+    border-radius: 10px;
+}
+
+
+
+
+textarea{
+    background-color: #232323;
+    color: white;
+    width: 100%;
+    height: 200px;
+
+}
+
+h1{
+    font-family: 'Lemonada', cursive;
+    font-size: 70px;
+}
+
+h2{
+    font-family: 'Lemonada', cursive;
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+}
+
+label{
+    font-size: 25px;
+}
+
+.container li a{
+    text-decoration: none;
+    color: black;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+    float: right;
+}
+
+.info{
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+}
+
+.info ul{
+    background-color: transparent;
+}
+
+.info a{
+    color: black;
+}
+
+.info a:hover{
+    background-color: transparent;
+}
+
+.container{
+    position: relative;
+    top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+.all{
+    width: 100%;
+}
+
+.lista{
+    list-style: none;
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    height: 35px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.lista li{
+    font-family: 'Merriweather', serif;
+    display: inline;
+    padding-left: 5px;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.note{
+    overflow: scroll;
+    top: 0;
+    margin-top: 5px;
+    padding: 3px;
+    width: 100%;
+    height: 200%;
+    background-color: #232323;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.radio{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    font-size: 15px;
+}
+
+.error{
+    color: red;
+    font-size: 25px;
+}
+
+.container_movil{
+    width: 200px;
+    height: 200px;
+}
